@@ -1,0 +1,24 @@
+<br />
+<br />
+<div *ngIf="!isSucess">
+  <label> Informe seu email: </label>
+  <input [(ngModel)]="user.email" size="30"/>
+  
+  <button (click)="save()">Save</button>
+</div>
+
+
+
+<div *ngIf="isSucess">
+  <br /><br />
+  <label> Código de Validação: </label>
+  <input [(ngModel)]="user.confirmationCode" size="30"/>
+  
+  <button (click)="confirm()">Confirmar</button>
+</div>
+<br />
+
+  <button (click)="login()">Login</button>
+
+
+
